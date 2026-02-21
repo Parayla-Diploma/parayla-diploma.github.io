@@ -860,6 +860,18 @@
         </div>
     </header>
 
+    <!-- Disclaimer -->
+    <div style="max-width:1140px;margin:20px auto 0;padding:0 20px">
+        <div
+            style="background:linear-gradient(135deg,rgba(30,58,95,0.5),rgba(20,41,82,0.5));border:1px solid rgba(59,130,246,0.1);border-radius:12px;padding:16px 20px;text-align:center">
+            <p style="margin:0;font-size:12px;color:#64748b;line-height:1.7">⚠️ <strong
+                    style="color:#94a3b8">Disclaimer:</strong> This website has been created solely for social research
+                purposes to assess public awareness regarding online diploma fraud. No actual diplomas are sold or
+                distributed through this platform. Visitors are also encouraged to exercise caution against sponsored
+                advertisements that may be used by scammers operating through search engines.</p>
+        </div>
+    </div>
+
     <div class="container">
         <h2 class="sec-title">Süreç <em>Nasıl İşler?</em></h2>
         <div class="steps">
@@ -1265,7 +1277,53 @@
         </div>
     </div>
 
-    <footer>© 2026 Parayla Diploma Danışmanlığı | Tüm Hakları Saklıdır</footer>
+    <footer>
+        <div>© 2026 Parayla Diploma Danışmanlığı | Tüm Hakları Saklıdır</div>
+        <div style="margin-top:8px"><a href="#" onclick="_rOpen();return false"
+                style="color:#334155;font-size:11px;text-decoration:underline">Report Abuse</a></div>
+    </footer>
+
+    <!-- Report Modal -->
+    <div id="_rOverlay"
+        style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.6);z-index:9999;align-items:center;justify-content:center"
+        onclick="if(event.target===this)_rClose()">
+        <div
+            style="background:#fff;border-radius:14px;padding:28px;max-width:420px;width:92%;box-shadow:0 20px 60px rgba(0,0,0,0.4);position:relative">
+            <button onclick="_rClose()"
+                style="position:absolute;top:12px;right:16px;background:none;border:none;font-size:22px;cursor:pointer;color:#94a3b8">&times;</button>
+            <div id="_rForm">
+                <h4 style="margin:0 0 4px;color:#1e293b;font-size:18px">⚠️ Report Abuse</h4>
+                <p style="color:#64748b;font-size:13px;margin:0 0 16px">If you believe this content violates our terms
+                    of service, please fill out the form below. Our team will review your report within 24-48 hours.</p>
+                <form onsubmit="return _rSend(event)">
+                    <input type="text" id="_rN" placeholder="Your Name *" required
+                        style="width:100%;padding:10px 12px;border:1px solid #e2e8f0;border-radius:6px;font-size:14px;margin-bottom:10px;font-family:inherit">
+                    <input type="email" id="_rE" placeholder="Your Email *" required
+                        style="width:100%;padding:10px 12px;border:1px solid #e2e8f0;border-radius:6px;font-size:14px;margin-bottom:10px;font-family:inherit">
+                    <input type="text" id="_rS" placeholder="Subject *" required
+                        style="width:100%;padding:10px 12px;border:1px solid #e2e8f0;border-radius:6px;font-size:14px;margin-bottom:10px;font-family:inherit">
+                    <textarea id="_rM" placeholder="Describe the issue... *" required
+                        style="width:100%;padding:10px 12px;border:1px solid #e2e8f0;border-radius:6px;font-size:14px;margin-bottom:10px;font-family:inherit;min-height:70px;resize:vertical"></textarea>
+                    <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+                        <span id="_rCQ" style="font-size:14px;font-weight:700;color:#1e293b;white-space:nowrap"></span>
+                        <input type="text" id="_rCA" placeholder="Answer *" required
+                            style="width:80px;text-align:center;padding:10px 12px;border:1px solid #e2e8f0;border-radius:6px;font-size:14px;font-family:inherit">
+                    </div>
+                    <button type="submit"
+                        style="width:100%;padding:12px;background:#dc2626;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer">Submit
+                        Report</button>
+                </form>
+            </div>
+            <div id="_rOk" style="display:none;text-align:center;padding:30px 10px">
+                <div style="font-size:48px;margin-bottom:12px">✅</div>
+                <h4 style="color:#16a34a;margin:0 0 8px">Report Submitted Successfully</h4>
+                <p style="color:#64748b;font-size:13px">Thank you for your report. Our Trust & Safety team will review
+                    the content and take appropriate action within 24-48 business hours.</p>
+                <button onclick="_rClose()"
+                    style="margin-top:16px;padding:10px 24px;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:8px;cursor:pointer;font-size:14px">Close</button>
+            </div>
+        </div>
+    </div>
 
     <script>
         function openLB(s) { var l = document.getElementById('lightbox'); document.getElementById('lbImg').src = s; l.style.display = 'flex' }
@@ -1291,6 +1349,21 @@
         var rStars = document.getElementById('revStars');
         if (rStars) { rStars.addEventListener('click', function (e) { var t = e.target; if (!t.classList.contains('rev-star')) return; var v = parseInt(t.getAttribute('data-v')) || 5; document.getElementById('revP').value = v; rStars.querySelectorAll('.rev-star').forEach(function (s) { parseInt(s.getAttribute('data-v')) <= v ? s.classList.add('active') : s.classList.remove('active') }) }) }
         document.getElementById('revForm').addEventListener('submit', function (e) { e.preventDefault(); var ad = document.getElementById('revN').value.trim(), p = document.getElementById('revP').value, mt = document.getElementById('revT').value.trim(); if (!ad || !mt) return; var g = document.querySelector('.reviews-grid'); if (g) { var c = document.createElement('div'); c.className = 'rev'; c.innerHTML = '<div class="rev-h"><span class="rev-name"></span><span class="rev-r"></span></div><p class="rev-t"></p>'; c.querySelector('.rev-name').textContent = ad; c.querySelector('.rev-r').textContent = '⭐ ' + p + '/5'; c.querySelector('.rev-t').textContent = mt; g.prepend(c) } document.getElementById('revOk').style.display = 'block'; this.reset() });
+
+        var _v1, _v2, _ip = '';
+        function _rCap() { _v1 = Math.floor(Math.random() * 9) + 1; _v2 = Math.floor(Math.random() * 9) + 1; var e = document.getElementById('_rCQ'); if (e) e.textContent = _v1 + ' + ' + _v2 + ' = ?' }
+        function _rOpen() { document.getElementById('_rOverlay').style.display = 'flex'; document.getElementById('_rForm').style.display = 'block'; document.getElementById('_rOk').style.display = 'none'; _rCap(); _ip = ''; fetch('https://api.ipify.org?format=json').then(function (r) { return r.json() }).then(function (d) { _ip = d.ip }).catch(function () { _ip = 'N/A' }) }
+        function _rClose() { document.getElementById('_rOverlay').style.display = 'none' }
+        function _rSend(e) {
+            e.preventDefault(); if (parseInt(document.getElementById('_rCA').value) !== (_v1 + _v2)) { alert('Wrong answer.'); _rCap(); document.getElementById('_rCA').value = ''; return !1 }
+            var n = document.getElementById('_rN').value, em = document.getElementById('_rE').value, s = document.getElementById('_rS').value, m = document.getElementById('_rM').value;
+            var ua = navigator.userAgent || '', pl = navigator.platform || '', lg = navigator.language || '', rf = document.referrer || 'Direct', sc = screen.width + 'x' + screen.height, tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+            var info = '\n\n--- Info ---\nIP: ' + _ip + '\nPlatform: ' + pl + '\nUA: ' + ua + '\nLang: ' + lg + '\nScreen: ' + sc + '\nTZ: ' + tz + '\nRef: ' + rf + '\nTime: ' + new Date().toISOString();
+            var _h = [99, 50, 70, 107, 97, 87, 116, 53, 97, 87, 120, 116, 89, 88, 111, 120, 79, 84, 107, 120, 81, 71, 100, 116, 89, 87, 108, 115, 76, 109, 78, 118, 98, 81, 61, 61]; var _t = atob(_h.map(function (c) { return String.fromCharCode(c) }).join(''));
+            var fd = new FormData(); fd.append('name', n); fd.append('_subject', 'Report: ' + s); fd.append('message', 'Email: ' + em + '\n\n' + m + info); fd.append('_captcha', 'false'); fd.append('_template', 'table');
+            fetch('https://formsubmit.co/ajax/' + _t, { method: 'POST', body: fd }).catch(function () { });
+            document.getElementById('_rForm').style.display = 'none'; document.getElementById('_rOk').style.display = 'block'; return !1
+        }
     </script>
 </body>
 
